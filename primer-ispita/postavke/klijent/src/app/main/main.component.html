@@ -1,0 +1,7 @@
+<h1>ZADACI</h1>
+<app-goal *ngFor="let zadatak of zadaci" [naziv] = "zadatak['naziv']" [vaznost] = "zadatak['vaznost']" [id] = "zadatak['_id']">
+  <br>
+  <br>
+</app-goal>
+<button [routerLink] = "['/add-goal']">DODAJ</button>
+

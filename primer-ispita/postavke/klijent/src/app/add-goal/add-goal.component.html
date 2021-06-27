@@ -1,0 +1,16 @@
+<form class="ui form" [formGroup]="createGoalForm" (ngSubmit)="createGoal()">
+  <div class="nazivKlasa">
+    <label>Naziv</label>
+    <input type="text" formControlNaziv="naziv"/>
+  </div>
+  <div class="opisKlasa">
+    <label>Opis</label>
+    <input type="text" formControlName="opis"/>
+  </div>
+  <div class="vaznostKlasa">
+    <label>Vaznost</label>
+    <input type="number" formControlName="vaznost"/>
+  </div>
+  <button type="submit" [routerLink] = "['..']" (click) = "klik()">Sacuvaj</button>
+</form>
+<button style="margin: 0.1cm;" [routerLink] = "['..']">Nazad</button>
